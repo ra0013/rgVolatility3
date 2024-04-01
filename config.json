@@ -1,0 +1,5 @@
+{
+  "PythonPath": "C:\\your\\path\\to\\python.exe",
+  "VolatilityPath": "C:\\your\\path\\to\\volatility3\\vol.py",
+  "DefaultDir": "C:\\directory\\for\\volatility3"
+}

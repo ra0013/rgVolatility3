@@ -1,0 +1,554 @@
+[
+
+  {
+    "Name": "banners.Banners",
+    "HelpCommand": "volatility banners.Banners --help",
+    "Description": "Attempts to identify potential linux banners in an image"
+  },
+  {
+    "Name": "configwriter.ConfigWriter",
+    "HelpCommand": "volatility configwriter.ConfigWriter --help",
+    "Description": "Runs the automagics and both prints and outputs configuration in the output directory."
+  },
+  {
+    "Name": "frameworkinfo.FrameworkInfo",
+    "HelpCommand": "volatility frameworkinfo.FrameworkInfo --help",
+    "Description": "Plugin to list the various modular components of Volatility"
+  },
+  {
+    "Name": "isfinfo.IsfInfo",
+    "HelpCommand": "volatility isfinfo.IsfInfo --help",
+    "Description": "Determines information about the currently available ISF files, or a specific one"
+  },
+  {
+    "Name": "layerwriter.LayerWriter",
+    "HelpCommand": "volatility layerwriter.LayerWriter --help",
+    "Description": "Runs the automagics and writes out the primary layer produced by the stacker."
+  },
+  {
+    "Name": "linux.capabilities.Capabilities",
+    "HelpCommand": "volatility linux.capabilities.Capabilities --help",
+    "Description": "Lists process capabilities"
+  },
+  {
+    "Name": "linux.bash.Bash",
+    "HelpCommand": "volatility linux.bash.Bash --help",
+    "Description": "Recovers bash command history from memory."
+  },
+  {
+    "Name": "linux.check_afinfo.Check_afinfo",
+    "HelpCommand": "volatility linux.check_afinfo.Check_afinfo --help",
+    "Description": "Verifies the operation function pointers of network protocols."
+  },
+  {
+    "Name": "linux.check_creds.Check_creds",
+    "HelpCommand": "volatility linux.check_creds.Check_creds --help",
+    "Description": "Checks if any processes are sharing credential structures"
+  },
+  {
+    "Name": "linux.check_idt.Check_idt",
+    "HelpCommand": "volatility linux.check_idt.Check_idt --help",
+    "Description": "Checks if the IDT has been altered"
+  },
+  {
+    "Name": "linux.check_modules.Check_modules",
+    "HelpCommand": "linux.check_modules.Check_modules --help",
+    "Description": "Compares module list to sysfs info, if available"
+  },
+  {
+    "Name": "linux.check_syscall.Check_syscall",
+    "HelpCommand": "volatility linux.check_syscall.Check_syscall --help",
+    "Description": "Check system call table for hooks."
+  },
+  {
+    "Name": "linux.elfs.Elfs",
+    "HelpCommand": "volatility linux.elfs.Elfs --help",
+    "Description": "Lists all memory mapped ELF files for all processes."
+  },
+  {
+    "Name": "linux.envars.Envars",
+    "HelpCommand": "volatility linux.envars.Envars --help",
+    "Description": "Lists processes with their environment variables"
+  },
+  {
+    "Name": "linux.iomem.IOMem",
+    "HelpCommand": "volatility linux.iomem.IOMem --help",
+    "Description": "Generates an output similar to /proc/iomem on a running system."
+  },
+  {
+    "Name": "linux.keyboard_notifiers.Keyboard_notifiers",
+    "HelpCommand": "volatility linux.keyboard_notifiers.Keyboard_notifiers --help",
+    "Description": "Parses the keyboard notifier call chain"
+  },
+  {
+    "Name": "linux.kmsg.Kmsg",
+    "HelpCommand": "volatility linux.kmsg.Kmsg --help",
+    "Description": "Kernel log buffer reader"
+  },
+  {
+    "Name": "linux.library_list.LibraryList",
+    "HelpCommand": "volatility linux.library_list.LibraryList --help",
+    "Description": "Enumerate libraries loaded into processes"
+  },
+  {
+    "Name": "linux.lsmod.Lsmod",
+    "HelpCommand": "volatility linux.lsmod.Lsmod --help",
+    "Description": "Lists loaded kernel modules."
+  },
+  {
+    "Name": "linux.lsof.Lsof",
+    "HelpCommand": "volatility linux.lsof.Lsof --help",
+    "Desciption": "Lists all memory maps for all processes."
+  },
+  {
+    "Name": "linux.malfind.Malfind",
+    "HelpCommand": "volatility linux.malfind.Malfind --help",
+    "Description": "Lists process memory ranges that potentially contain injected code."
+  },
+  {
+    "Name": "linux.mountinfo.MountInfo",
+    "HelpCommand": "volatility linux.mountinfo.MountInfo --help",
+    "Description": "Lists mount points on processes mount namespaces"
+  },
+  {
+    "Name": "linux.proc.Maps",
+    "HelpCommand": "volatility linux.proc.Maps --help",
+    "Description": "Lists all memory maps for all processes."
+  },
+  {
+    "Name": "linux.psaux.PsAux",
+    "HelpCommand": "volatility linux.psaux.PsAux --help",
+    "Desciption": "Lists processes with their command line arguments"
+  },
+  {
+    "Name": "linux.pslist.PsList",
+    "HelpCommand": "volatility linux.pslist.PsList --help",
+    "Description": "Lists the processes present in a particular linux memory image."
+  },
+  {
+    "Name": "linux.psscan.PsScan",
+    "HelpCommand": "volatility linux.psscan.PsScan --help",
+    "Description": "Scans for processes present in a particular linux image."
+  },
+  {
+    "Name": "linux.pstree.PsTree",
+    "HelpCommand": "volatility linux.pstree.PsTree --help",
+    "Description": "Plugin for listing processes in a tree based on their parent process ID."
+  },
+  {
+    "Name": "linux.sockstat.Sockstat",
+    "HelpCommand": "volatility linux.sockstat.Sockstat --help",
+    "Description": "Lists all network connections for all processes."
+  },
+  {
+    "Name": "linux.tty_check.tty_check",
+    "HelpCommand": "volatility linux.tty_check.tty_check --help",
+    "Description": "Checks tty devices for hooks"
+  },
+  {
+    "Name": "mac.bash.Bash",
+    "HelpCommand": "volatility mac.bash.Bash --help",
+    "Description": "Recovers bash command history from memory."
+  },
+  {
+    "Name": "mac.check_syscall.Check_syscall",
+    "HelpCommand": "volatility mac.check_syscall.Check_syscall --help",
+    "Description": "Check system call table for hooks."
+  },
+  {
+    "Name": "mac.check_sysctl.Check_sysctl",
+    "HelpCommand": "volatility mac.check_sysctl.Check_sysctl --help",
+    "Description": "Check sysctl handlers for hooks."
+  },
+  {
+    "Name": "mac.check_trap_table.Check_trap_table",
+    "HelpCommand": "volatility mac.check_trap_table.Check_trap_table --help",
+    "Description": "Check mach trap table for hooks."
+  },
+  {
+    "Name": "mac.dmesg.Dmesg",
+    "HelpCommand": "volatility mac.dmesg.Dmesg --help",
+    "Description": "Prints the kernel log buffer."
+  },
+  {
+    "Name": "mac.ifconfig.Ifconfig",
+    "HelpCommand": "volatility mac.ifconfig.Ifconfig --help",
+    "Description": " Lists network interface information for all devices"
+  },
+  {
+    "Name": "mac.kauth_listeners.Kauth_listeners",
+    "HelpCommand": "volatility mac.kauth_listeners.Kauth_listeners --help",
+    "Description": "Lists kauth listeners and their status"
+  },
+  {
+    "Name": "mac.kauth_scopes.Kauth_scopes",
+    "HelpCommand": "volatility mac.kauth_scopes.Kauth_scopes --help",
+    "Description": "Lists kauth scopes and their status"
+  },
+  {
+    "Name": "mac.kevents.Kevents",
+    "HelpCommand": "volatility mac.kevents.Kevents --help",
+    "Description": "Lists event handlers registered by processes"
+  },
+  {
+    "Name": "mac.list_files.List_Files",
+    "HelpCommand": "volatility mac.list_files.List_Files --help",
+    "Description": "Lists all open file descriptors for all processes."
+  },
+  {
+    "Name": "mac.lsmod.Lsmod",
+    "HelpCommand": "volatility mac.lsmod.Lsmod --help",
+    "Description": "Lists loaded kernel modules."
+  },
+  {
+    "Name": "mac.lsof.Lsof",
+    "HelpCommand": "volatility mac.lsof.Lsof --help",
+    "Description": "Lists all open file descriptors for all processes."
+  },
+  {
+    "Name": "mac.malfind.Malfind",
+    "HelpCommand": "volatility mac.malfind.Malfind --help",
+    "Description": "Lists process memory ranges that potentially contain injected code."
+  },
+  {
+    "Name": "mac.mount.Mount",
+    "HelpCommand": "volatility mac.mount.Mount --help",
+    "Description": "A module containing a collection of plugins that produce data typically found in Mac's mount command"
+  },
+  {
+    "Name": "mac.netstat.Netstat",
+    "HelpCommand": "volatility mac.netstat.Netstat --help",
+    "Description": "Lists all network connections for all processes."
+  },
+  {
+    "Name": "mac.proc_maps.Maps",
+    "HelpCommand": "volatility mac.proc_maps.Maps --help",
+    "Description": "Lists process memory ranges that potentially contain injected code."
+  },
+  {
+    "Name": "mac.psaux.Psaux",
+    "HelpCommand": "volatility mac.psaux.Psaux --help",
+    "Description": " Recovers program command line arguments."
+  },
+  {
+    "Name": "mac.pslist.PsList",
+    "HelpCommand": "volatility mac.pslist.PsList --help",
+    "Description": "Lists the processes present in a particular mac memory image."
+  },
+  {
+    "Name": "mac.pstree.PsTree",
+    "HelpCommand": "volatility mac.pstree.PsTree --help",
+    "Description": "Plugin for listing processes in a tree based on their parent process ID."
+  },
+  {
+    "Name": "mac.socket_filters.Socket_filters",
+    "HelpCommand": "volatility mac.socket_filters.Socket_filters --help",
+    "Description": "Enumerates kernel socket filters."
+  },
+  {
+    "Name": "mac.timers.Timers",
+    "HelpCommand": "volatility mac.timers.Timers --help",
+    "Description": "Check for malicious kernel timers."
+  },
+  {
+    "Name": "mac.trustedbsd.Trustedbsd",
+    "HelpCommand": "volatility mac.trustedbsd.Trustedbsd --help",
+    "Description": "Checks for malicious trustedbsd modules"
+  },
+  {
+    "Name": "mac.vfsevents.VFSevents",
+    "HelpCommand": "volatility mac.vfsevents.VFSevents --help",
+    "Description": "Lists processes that are filtering file system events"
+  },
+  {
+    "Name": "timeliner.Timeliner",
+    "HelpCommand": "volatility timeliner.Timeliner --help",
+    "Description": " Runs all relevant plugins that provide time related information and orders the results by time."
+  },
+  {
+    "Name": "windows.bigpools.BigPools",
+    "HelpCommand": "volatility windows.bigpools.BigPools --help",
+    "Description": "List big page pools."
+  },
+  {
+    "Name": "windows.cachedump.Cachedump",
+    "HelpCommand": "volatility windows.cachedump.Cachedump --help",
+    "Description": "Dumps lsa secrets from memory"
+  },
+  {
+    "Name": "windows.callbacks.Callbacks",
+    "HelpCommand": "volatility windows.callbacks.Callbacks --help",
+    "Description": "Lists kernel callbacks and notification routines."
+  },
+  {
+    "Name": "windows.cmdline.CmdLine",
+    "HelpCommand": "volatility windows.cmdline.CmdLine --help",
+    "Description": "Lists process command line arguments."
+  },
+  {
+    "Name": "windows.crashinfo.Crashinfo",
+    "HelpCommand": "volatility windows.crashinfo.Crashinfo --help",
+    "Description": "Lists the information from a Windows crash dump."
+  },
+  {
+    "Name": "windows.devicetree.DeviceTree",
+    "HelpCommand": "volatility windows.devicetree.DeviceTree --help",
+    "Description": "Listing tree based on drivers and attached devices in a particular windows memory image."
+  },
+  {
+    "Name": "windows.dlllist.DllList",
+    "HelpCommand": "volatility windows.dlllist.DllList --help",
+    "Description": "Lists the loaded modules in a particular windows memory image."
+  },
+  {
+    "Name": "windows.driverirp.DriverIrp",
+    "HelpCommand": "volatility windows.driverirp.DriverIrp --help",
+    "Description": "List IRPs for drivers in a particular windows memory image."
+  },
+  {
+    "Name": "windows.drivermodule.DriverModule",
+    "HelpCommand": "volatility windows.drivermodule.DriverModule --help",
+    "Description": "Determines if any loaded drivers were hidden by a rootkit"
+  },
+  {
+    "Name": "windows.driverscan.DriverScan",
+    "HelpCommand": "volatility windows.driverscan.DriverScan --help",
+    "Description": "Scans for drivers present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.dumpfiles.DumpFiles",
+    "HelpCommand": "volatility windows.dumpfiles.DumpFiles --help",
+    "Description": "Dumps cached file contents from Windows memory samples."
+
+  },
+  {
+    "Name": "windows.envars.Envars",
+    "HelpCommand": "volatility windows.envars.Envars --help",
+    "Description": "Display process environment variables"
+  },
+  {
+    "Name": "windows.filescan.FileScan",
+    "HelpCommand": "volatility windows.filescan.FileScan --help",
+    "Description": "Scans for file objects present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.getservicesids.GetServiceSIDs",
+    "HelpCommand": "volatility  windows.getservicesids.GetServiceSIDs --help",
+    "Description": " Lists process token sids."
+  },
+  {
+    "Name": "windows.getsids.GetSIDs",
+    "HelpCommand": "volatility windows.getsids.GetSIDs --help",
+    "Description": "Print the SIDs owning each process"
+  },
+  {
+    "Name": "windows.handles.Handles",
+    "HelpCommand": "volatility  windows.handles.Handles --help",
+    "Description": "Lists process open handles."
+  },
+  {
+    "Name": "windows.hashdump.Hashdump",
+    "HelpCommand": "volatility windows.hashdump.Hashdump --help",
+    "Description": "Dumps user hashes from memory"
+  },
+  {
+    "Name": "windows.iat.IAT",
+    "HelpCommand": "volatility windows.iat.IAT --help",
+    "Description": "Extract Import Address Table to list API (functions) used by a program contained in external libraries."
+  },
+  {
+    "Name": "windows.info.Info",
+    "HelpCommand": "volatility windows.info.Info --help",
+    "Description": "Show OS & kernel details of the memory sample being analyzed"
+  },
+  {
+    "Name": "windows.joblinks.JobLinks",
+    "HelpCommand": "volatility windows.joblinks.JobLinks --help",
+    "Description": "Print process job link information"
+  },
+  {
+    "Name": "windows.ldrmodules.LdrModules",
+    "HelpCommand": "volatility windows.ldrmodules.LdrModules --help",
+    "Description": "Lists the loaded modules in a particular windows memory image."
+  },
+  {
+    "Name": "windows.lsadump.Lsadump",
+    "HelpCommand": "volatility windows.lsadump.Lsadump --help",
+    "Description": "Dumps lsa secrets from memory"
+  },
+  {
+    "Name": "windows.malfind.Malfind",
+    "HelpCommand": "volatility windows.malfind.Malfind --help",
+    "Description": "Lists process memory ranges that potentially contain injected code."
+  },
+  {
+    "Name": "windows.mbrscan.MBRScan",
+    "HelpCommand": "volatility windows.mbrscan.MBRScan --help",
+    "Description": "Scans for and parses potential Master Boot Records (MBRs)"
+  },
+  {
+    "Name": "windows.memmap.Memmap",
+    "HelpCommand": "volatility windows.memmap.Memmap --help",
+    "Description": "Prints the memory map"
+  },
+  {
+    "Name": "windows.mftscan.ADS",
+    "HelpCommand": "volatility windows.mftscan.ADS --help",
+    "Description": "Scans for Alternate Data Stream"
+  },
+  {
+    "Name": "windows.mftscan.MFTScan",
+    "HelpCommand": "volatility windows.mftscan.MFTScan --help",
+    "Description": "Scans for MFT FILE objects present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.modscan.ModScan",
+    "HelpCommand": "volatility windows.modscan.ModScan --help",
+    "Description": "Scans for modules present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.modules.Modules",
+    "HelpCommand": "volatility windows.modules.Modules --help",
+    "Description": "Lists the loaded kernel modules."
+  },
+  {
+    "Name": "windows.mutantscan.MutantScan",
+    "HelpCommand": "volatility windows.mutantscan.MutantScan --help",
+    "Description": "Scans for mutexes present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.netscan.NetScan",
+    "HelpCommand": "volatility windows.netscan.NetScan --help",
+    "Description": "Scans for network objects present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.netstat.NetStat",
+    "HelpCommand": "volatility windows.netstat.NetStat --help",
+    "Description": "Traverses network tracking structures present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.poolscanner.PoolScanner",
+    "HelpCommand": "volatility windows.poolscanner.PoolScanner --help",
+    "Description": "A generic pool scanner plugin."
+  },
+  {
+    "Name": "windows.privileges.Privs",
+    "HelpCommand": "volatility windows.privileges.Privs --help",
+    "Description": "Lists process token privileges"
+  },
+  {
+    "Name": "windows.pslist.PsList",
+    "HelpCommand": "volatility windows.pslist.PsList --help",
+    "Description": "Lists the processes present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.psscan.PsScan",
+    "HelpCommand": "volatility windows.psscan.PsScan --help",
+    "Description": "Scans for processes present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.pstree.PsTree",
+    "HelpCommand": "volatility windows.pstree.PsTree --help",
+    "Description": "Plugin for listing processes in a tree based on their parent process ID."
+  },
+  {
+    "Name": "windows.registry.certificates.Certificates",
+    "HelpCommand": "volatility windows.registry.certificates.Certificates --help",
+    "Description": "Lists the certificates in the registry's Certificate Store."
+  },
+  {
+    "Name": "windows.registry.hivelist.HiveList",
+    "HelpCommand": "volatility windows.registry.hivelist.HiveList --help",
+    "Description": "Lists the registry hives present in a particular memory image."
+  },
+  {
+    "Name": "windows.registry.hivescan.HiveScan",
+    "HelpCommand": "volatility windows.registry.hivescan.HiveScan --help",
+    "Description": "Scans for registry hives present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.registry.printkey.PrintKey",
+    "HelpCommand": "volatility windows.registry.printkey.PrintKey --help",
+    "Description": "Lists the registry keys under a hive or specific key value."
+  },
+  {
+    "Name": "windows.registry.userassist.UserAssist",
+    "HelpCommand": "volatility windows.registry.userassist.UserAssist --help",
+    "Description": "Print userassist registry keys and information."
+  },
+  {
+    "Name": "windows.sessions.Sessions",
+    "HelpCommand": "volatility windows.sessions.Sessions --help",
+    "Description": " lists Processes with Session information extracted from Environmental Variables"
+  },
+  {
+    "Name": "windows.skeleton_key_check.Skeleton_Key_Check",
+    "HelpCommand": "volatility windows.skeleton_key_check.Skeleton_Key_Check --help",
+    "Description": "Looks for signs of Skeleton Key malware"
+  },
+  {
+    "Name": "windows.ssdt.SSDT",
+    "HelpCommand": "volatility windows.ssdt.SSDT --help",
+    "Description": "Lists the system call table."
+  },
+  {
+    "Name": "windows.statistics.Statistics",
+    "HelpCommand": "volatility windows.statistics.Statistics --help",
+    "Description": "Lists statistics about the memory space."
+  },
+  {
+    "Name": "windows.strings.Strings",
+    "HelpCommand": "volatility windows.strings.Strings --help",
+    "Description": "Reads output from the strings command and indicates which process(es) each string belongs to."
+  },
+  {
+    "Name": "windows.svcscan.SvcScan",
+    "HelpCommand": "volatility windows.svcscan.SvcScan --help",
+    "Description": "Scans for windows services."
+  },
+  {
+    "Name": "windows.symlinkscan.SymlinkScan",
+    "HelpCommand": "volatility windows.symlinkscan.SymlinkScan --help",
+    "Description": "Scans for links present in a particular windows memory image."
+  },
+  {
+    "Name": "windows.thrdscan.ThrdScan",
+    "HelpCommand": "volatility windows.thrdscan.ThrdScan --help",
+    "Description": "Scans for windows threads."
+  },
+  {
+    "Name": "windows.truecrypt.Passphrase",
+    "HelpCommand": "volatility windows.truecrypt.Passphrase --help",
+    "Description": "TrueCrypt Cached Passphrase Finder"
+  },
+  {
+    "Name": "windows.vadinfo.VadInfo",
+    "HelpCommand": "volatility windows.vadinfo.VadInfo --help",
+    "Description": "Lists process memory ranges."
+  },
+  {
+    "Name": "windows.vadwalk.VadWalk",
+    "HelpCommand": "volatility windows.vadwalk.VadWalk --help",
+    "Description": "Walk the VAD tree."
+  },
+  {
+    "Name": "windows.vadyarascan.VadYaraScan",
+    "HelpCommand": "volatility windows.vadyarascan.VadYaraScan --help",
+    "Description": "Scans all the Virtual Address Descriptor memory maps using yara."
+  },
+  {
+    "Name": "windows.verinfo.VerInfo",
+    "HelpCommand": "volatility windows.verinfo.VerInfo --help",
+    "Description": "Lists version information from PE files."
+  },
+  {
+    "Name": "windows.virtmap.VirtMap",
+    "HelpCommand": "volatility  windows.virtmap.VirtMap --help",
+    "Description": "Lists virtual mapped sections."
+  },
+  {
+    "Name": "yarascan.YaraScan",
+    "HelpCommand": "volatility yarascan.YaraScan --help",
+    "Description": "Scans kernel memory using yara rules (string or file)."
+  }
+]
